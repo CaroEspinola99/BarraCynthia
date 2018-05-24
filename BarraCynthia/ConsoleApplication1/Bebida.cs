@@ -5,10 +5,16 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
-    class Bebida
+    public class Bebida
     {
         public string nombre;
-        public float precio;
+        private float precio;
+
+        public float Precio
+        {
+            get { return precio; }
+            set { precio = value; }
+        }
         public List<Bebida> bebidas();
 
         public void Bebida(string unNombre, float unPrecio)

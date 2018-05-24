@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Barra
+   public class Barra
     {
         public int bebida;
         private int cantidad;
@@ -18,18 +18,16 @@ namespace ConsoleApplication1
             set { cantidad = value; }
         }
         public List<Cliente> clientes();
-        public float precio;
 
         public void Barra(int unaBebida, int unaCantidad, float unPrecio)
         {
             bebida = unaBebida;
             cantidad = unaCantidad;
-            precio = unPrecio;
             capacidad = 2;
         }
-        public int DescontarStock(int cantidad)
+        public int DescontarStock()
         {
-
+            
         }
     }
 }

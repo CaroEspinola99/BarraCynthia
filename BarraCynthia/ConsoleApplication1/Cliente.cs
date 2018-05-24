@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
-    class Cliente
+    public class Cliente
     {
         public int cantidad;
         public float dinero;
-        public List<Bebida> bebidad();
+        public List<Bebida> bebidas();
         public List<Cliente> clientes();
         public string nombre;
         public DateTime tiempo;
@@ -23,13 +23,20 @@ namespace ConsoleApplication1
         }
         public void DejarBarra()
         {
-
+            if (dinero > )
+            {
+                
+            }
         }
 
-        public int DescontarBebida()
-        { }
+        public int DescontarBebida(int cantidad, Bebida bebidas)
+        { 
+            
+        }
 
-        public int DescontarDinero()
-        { }
+        public int DescontarDinero(float dinero)
+        { 
+        
+        }
     }
 }
