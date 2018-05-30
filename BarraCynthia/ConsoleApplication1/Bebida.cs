@@ -15,7 +15,6 @@ namespace ConsoleApplication1
             get { return precio; }
             set { precio = value; }
         }
-        public List<Bebida> bebidas();
 
         public void Bebida(string unNombre, float unPrecio)
         {

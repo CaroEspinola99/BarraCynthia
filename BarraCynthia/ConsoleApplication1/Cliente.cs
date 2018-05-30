@@ -9,8 +9,7 @@ namespace ConsoleApplication1
     {
         public int cantidad;
         public float dinero;
-        public List<Bebida> bebidas();
-        public List<Cliente> clientes();
+        public List<Bebida> bebidas;
         public string nombre;
         public DateTime tiempo;
 
@@ -20,23 +19,30 @@ namespace ConsoleApplication1
             dinero = unDinero;
             nombre = unNombre;
             tiempo = unTiempo;
+            bebidas = new List<Bebida>();
         }
-        public void DejarBarra()
+        public void DejarBarra(Bebida unaBebida)
         {
-            if (dinero > )
+            while(true)
             {
-                
+                if (unaBebida.Precio > dinero)
+                {
+                    break;
+                }
             }
         }
 
-        public int DescontarBebida(int cantidad, Bebida bebidas)
-        { 
-            
+        public void DescontarBebida(Bebida unaBebida)
+        {
+            cantidad = unaBebida.Precio - unaBebida;
+            //Llamar al metodo descontarDinero1
+            //Eliminar bebida de la lista bebidas 
         }
 
-        public int DescontarDinero(float dinero)
-        { 
-        
+        public void DescontarDinero(Bebida unaBebida)
+        {
+             dinero = dinero - unaBebida.Precio;
+             
         }
     }
 }
